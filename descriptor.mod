@@ -1,9 +1,6 @@
-version="2.0"
+version="q"
 tags={
 	"Alternative History"
-	"Events"
-	"National Focuses"
-	"Ideologies"
 }
-name="VanciumRedux"
+name="vancea123"
 supported_version="1.16.9"
