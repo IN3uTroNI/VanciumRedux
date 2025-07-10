@@ -20263,152 +20263,6 @@ focus_tree = {
 			}
 		}
 	}
-
-focus = {
-		id = GER_party_vancea_hess
-		icon = GFX_focus_GER_party_chancellor_hess
-		prerequisite = { focus = GER_fuhrerprinzip }
-		mutually_exclusive = { focus = GER_party_chancellor_bormann }
-		x = 10
-		y = 1
-		relative_position_id = GER_fuhrerprinzip
-		cost = 4
-		
-		available = {
-			if = {
-				limit = {
-					is_ai = yes
-				}
-				hidden_trigger = {
-					NOT = { has_country_flag = GER_hess_was_ascended_flag } #Flag to prevent AI from taking the focus again after advisor has been replaced}
-				}
-			}
-			
-			has_government = fascism
-			NOT = {
-				has_country_leader = {
-					ruling_only = yes
-					character = GER_rudolf_hess
-				}
-			}
-
-			NOT = { has_country_flag = flight_of_hess }
-			
-			OR = { 
-				NOT = { has_war_with = SOU }
-				NOT = { has_war_with = ENG }
-			}
-			
-			if = {
-				limit = {
-					has_country_flag = GER_inner_circle_event_pending_flag
-				}
-				NOT = { has_country_flag = GER_inner_circle_event_pending_flag }
-			}
-
-			GER_inner_circle_is_ascension_cd_over = yes
-			if = {
-				limit = {
-					has_country_flag = GER_inner_circle_cd_flag
-				}
-				custom_trigger_tooltip = {
-					tooltip = GER_inner_circle_cd_days_tt
-					NOT = {	has_country_flag = GER_inner_circle_cd_flag }
-				}
-			}
-		}
-
-		#Focus will need to pause while events are pending
-		cancel_if_invalid = no
-		continue_if_invalid = no
-
-		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_POLITICAL }
-
-		select_effect = { #Necessary to prevent AI from getting stuck if the focus is paused due to available trigger returning false
-			set_country_flag = GER_hess_ascension_flag
-		}
-
-		completion_reward = {
-			custom_effect_tooltip = {
-				localization_key = GER_ascension_of_character_tt
-				CHARACTER = GER_rudolf_hess
-			}
-			show_ideas_tooltip = GER_hess_party_chancellor
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-
-			custom_effect_tooltip = {
-				localization_key = GER_ascension_of_character_focus_tt
-				CHARACTER = GER_rudolf_hess
-			}
-
-			if = { #Just to make it easy to debug stuff for development
-				limit = {
-					OR = {
-						check_variable = { GER_ascended_advisor_1 = 6 }
-						check_variable = { GER_ascended_advisor_2 = 6 }
-						check_variable = { GER_ascended_advisor_3 = 6 }
-					}
-				}
-				log = "Advisor was already there. STOP CHEATING!"
-			}
-			else_if = { # ASCENDED ADVISORS FULL - NEED TO REPLACE SOMEONE
-				limit = {
-					check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
-					check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
-					check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
-				}
-				hidden_effect = {
-					set_variable = { GER_ascending_advisor = 6 }
-					country_event = GER_inner_circle.01
-				}
-
-				custom_effect_tooltip = generic_skip_one_line_tt
-				custom_effect_tooltip = {
-					localization_key = GER_event_to_replace_ascended_advisor_tt
-					EVENT = GER_inner_circle.01.t
-					CHARACTER = GER_rudolf_hess
-				}
-			}
-			else = {
-				hidden_effect = {
-					add_ideas = GER_hess_party_chancellor
-				}
-				if = {
-					limit = {
-						check_variable = { GER_ascended_advisor_1 = 0 }
-					}
-					set_variable = { GER_ascended_advisor_1 = 6 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { GER_ascended_advisor_2 = 0 }
-					}
-					set_variable = { GER_ascended_advisor_2 = 6 }
-				}
-				else_if = {
-					limit = {
-						check_variable = { GER_ascended_advisor_3 = 0 }
-					}
-					set_variable = { GER_ascended_advisor_3 = 6 }
-				}
-			}
-
-			hidden_effect = {
-				country_event = { id = GER_inner_circle_hess.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
-				clr_country_flag = GER_hess_ascension_flag
-
-				GER_inner_circle_set_ascension_cd = yes
-
-				set_country_flag = { #Flag to prevent AI from taking the focus again after advisor has been replaced
-					flag = GER_hess_was_ascended_flag
-					days = 1500 # Clear after ~4 years 
-					value = 1
-				}
-			}
-		}
-	}
-
 	
 	focus = {
 		id = GER_party_chancellor_bormann
@@ -38428,5 +38282,176 @@ focus = {
 			}
 		}
 	}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+focus = {
+		id = GER_ascension_of_vancea
+		icon = GFX_focus_GER_ascension_of_todt
+		prerequisite = { focus = GER_fuhrerprinzip }
+
+		x = 10
+		y = 1
+		relative_position_id = GER_fuhrerprinzip
+		cost = 3
+		
+		available = {
+			if = {
+				limit = {
+					is_ai = yes
+				}
+				hidden_trigger = {
+					NOT = { has_country_flag = GER_todt_was_ascended_flag } #Flag to prevent AI from taking the focus again after advisor has been replaced}
+				}
+			}
+
+			has_government = fascism
+			NOT = {
+				has_country_leader = {
+					ruling_only = yes
+					character = GER_fritz_todt
+				}
+			}
+			if = {
+				limit = {
+					has_country_flag = GER_inner_circle_event_pending_flag
+				}
+				NOT = { has_country_flag = GER_inner_circle_event_pending_flag }
+			}
+
+			GER_inner_circle_is_ascension_cd_over = yes
+			if = {
+				limit = {
+					has_country_flag = GER_inner_circle_cd_flag
+				}
+				custom_trigger_tooltip = {
+					tooltip = GER_inner_circle_cd_days_tt
+					NOT = {	has_country_flag = GER_inner_circle_cd_flag }
+				}
+			}
+		}
+
+		#Focus will need to pause while events are pending
+		cancel_if_invalid = no
+		continue_if_invalid = no
+
+		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_POLITICAL_CHARACTER FOCUS_FILTER_INDUSTRY }
+
+		select_effect = { #Necessary to prevent AI from getting stuck if the focus is paused due to available trigger returning false
+			set_country_flag = GER_todt_ascension_flag
+		}
+
+		completion_reward = {
+			custom_effect_tooltip = {
+				localization_key = GER_ascension_of_character_tt
+				CHARACTER = GER_fritz_todt
+			}
+			show_ideas_tooltip = GER_todt_reich_engineer
+
+			custom_effect_tooltip = generic_skip_one_line_tt
+
+			custom_effect_tooltip = {
+				localization_key = GER_ascension_of_character_focus_tt
+				CHARACTER = GER_fritz_todt
+			}
+
+			if = { #Just to make it easy to debug stuff for development
+				limit = {
+					OR = {
+						check_variable = { GER_ascended_advisor_1 = 1 }
+						check_variable = { GER_ascended_advisor_2 = 1 }
+						check_variable = { GER_ascended_advisor_3 = 1 }
+					}
+				}
+				log = "Advisor was already there. STOP CHEATING!"
+			}
+			else_if = { # ASCENDED ADVISORS FULL - NEED TO REPLACE SOMEONE
+				limit = {
+					check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
+					check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
+					check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
+				}
+				hidden_effect = {
+					set_variable = { GER_ascending_advisor = 1 }
+					country_event = GER_inner_circle.01
+				}
+
+				custom_effect_tooltip = generic_skip_one_line_tt
+				custom_effect_tooltip = {
+					localization_key = GER_event_to_replace_ascended_advisor_tt
+					EVENT = GER_inner_circle.01.t
+					CHARACTER = GER_fritz_todt
+				}
+			}
+			else = {
+				hidden_effect = {
+					add_ideas = GER_todt_reich_engineer
+				}
+				if = {
+					limit = {
+						check_variable = { GER_ascended_advisor_1 = 0 }
+					}
+					set_variable = { GER_ascended_advisor_1 = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { GER_ascended_advisor_2 = 0 }
+					}
+					set_variable = { GER_ascended_advisor_2 = 1 }
+				}
+				else_if = {
+					limit = {
+						check_variable = { GER_ascended_advisor_3 = 0 }
+					}
+					set_variable = { GER_ascended_advisor_3 = 1 }
+				}
+			}
+
+			hidden_effect = {
+				country_event = { id = GER_inner_circle_todt.01 days = GER_inner_circle_days_to_start_focus random_days = GER_inner_circle_random_days }
+
+				clr_country_flag = GER_todt_ascension_flag
+
+				GER_inner_circle_set_ascension_cd = yes
+
+				if = { #If historical make sure Todt is not picked ever after being replaced by Speer in the Intrigue Event
+					limit = {
+						GER_is_historical_ai = yes
+					}
+					set_country_flag = GER_todt_was_ascended_flag #Flag to prevent AI from taking the focus again after advisor has been replaced
+				}
+				else = {
+					set_country_flag = { #Flag to prevent AI from taking the focus again after advisor has been replaced
+						flag = GER_todt_was_ascended_flag
+						days = 1500 # Clear after ~4 years 
+						value = 1
+					}
+				}
+			}
+		}
+	}
+
+
+
+
+
+
+
+
+
+
+
+
 
 }
