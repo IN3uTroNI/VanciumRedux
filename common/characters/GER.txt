@@ -231,18 +231,43 @@ characters = {
 
 
 
-GER_vancea_andrei = {
+	GER_vancea_andrei = {
 		name = GER_adolf_hitler
 		portraits = {
 			civilian = {
 				large = GFX_portrait_GER_adolf_hitler
 			}
+			army = {
+				large = GFX_portrait_GER_fritz_todt
+				small = GFX_portrait_GER_fritz_todt_small
+			}
 		}
+
 		country_leader = {
 			ideology = nazism
 			traits = { GER_der_fuhrer }
 			expire = "1965.1.1.1"
 			id = -1
+		}
+
+		advisor = {
+			slot = political_advisor
+			idea_token = todt
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+				has_country_flag = GER_reinstated_nazi_leadership
+			}
+			visible = {
+				has_country_flag = GER_reinstated_nazi_leadership
+			}
+			traits = {
+				GER_reich_engineer
+			}
+			ai_will_do = {
+				factor = 0
+			}
 		}
 	}
 

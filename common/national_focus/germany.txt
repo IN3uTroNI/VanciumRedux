@@ -20269,6 +20269,7 @@ focus_tree = {
 		icon = GFX_focus_GER_party_chancellor_bormann
 		prerequisite = { focus = GER_fuhrerprinzip }
 		mutually_exclusive = { focus = GER_party_chancellor_hess }
+		mutually_exclusive = { focus = GER_ascension_of_vancea }
 		x = 2
 		y = 0
 		relative_position_id = GER_party_chancellor_hess
@@ -38300,6 +38301,7 @@ focus = {
 		id = GER_ascension_of_vancea
 		icon = GFX_goal_ascension_of_vancea
 		prerequisite = { focus = GER_fuhrerprinzip }
+		mutually_exclusive = { focus = GER_party_chancellor_bormann }
 
 		x = 10
 		y = 1
@@ -38320,7 +38322,7 @@ focus = {
 			NOT = {
 				has_country_leader = {
 					ruling_only = yes
-					character = GER_fritz_todt
+					character = GER_vancea_andrei
 				}
 			}
 			if = {
@@ -38357,7 +38359,7 @@ focus = {
 				localization_key = GER_ascension_of_character_tt
 				CHARACTER = GER_vancea_andrei
 			}
-			show_ideas_tooltip = GER_todt_reich_engineer
+			show_ideas_tooltip = GER_vancea_reich_engineer
 
 			custom_effect_tooltip = generic_skip_one_line_tt
 
@@ -38369,9 +38371,9 @@ focus = {
 			if = { #Just to make it easy to debug stuff for development
 				limit = {
 					OR = {
-						check_variable = { GER_ascended_advisor_1 = 1 }
-						check_variable = { GER_ascended_advisor_2 = 1 }
-						check_variable = { GER_ascended_advisor_3 = 1 }
+						check_variable = { GER_ascended_advisor_1 = 8 }
+						check_variable = { GER_ascended_advisor_2 = 8 }
+						check_variable = { GER_ascended_advisor_3 = 8 }
 					}
 				}
 				log = "Advisor was already there. STOP CHEATING!"
@@ -38383,7 +38385,7 @@ focus = {
 					check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
 				}
 				hidden_effect = {
-					set_variable = { GER_ascending_advisor = 1 }
+					set_variable = { GER_ascending_advisor = 8 }
 					country_event = GER_inner_circle.01
 				}
 
@@ -38396,25 +38398,25 @@ focus = {
 			}
 			else = {
 				hidden_effect = {
-					add_ideas = GER_todt_reich_engineer
+					add_ideas = GER_vancea_reich_engineer
 				}
 				if = {
 					limit = {
 						check_variable = { GER_ascended_advisor_1 = 0 }
 					}
-					set_variable = { GER_ascended_advisor_1 = 1 }
+					set_variable = { GER_ascended_advisor_1 = 8 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { GER_ascended_advisor_2 = 0 }
 					}
-					set_variable = { GER_ascended_advisor_2 = 1 }
+					set_variable = { GER_ascended_advisor_2 = 8 }
 				}
 				else_if = {
 					limit = {
 						check_variable = { GER_ascended_advisor_3 = 0 }
 					}
-					set_variable = { GER_ascended_advisor_3 = 1 }
+					set_variable = { GER_ascended_advisor_3 = 8 }
 				}
 			}
 
@@ -38522,8 +38524,6 @@ focus = {
 			}
 		}
 	}
-
-
 
 
 

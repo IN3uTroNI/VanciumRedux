@@ -6492,6 +6492,26 @@ ideas = {
 				research_speed_factor = 0.05
 			}
 		}
+
+		GER_vancea_reich_engineer = {
+			#picture = todt
+		
+			allowed = {
+				always = no
+			}
+
+			removal_cost = -1
+
+
+			modifier = {
+				# PP Cost
+				political_power_gain = -0.1
+
+				production_speed_industrial_complex_factor = 0.1
+				production_speed_infrastructure_factor = 0.1
+				production_speed_rail_way_factor = 0.6
+			}
+		}
 	}
 
 
