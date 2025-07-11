@@ -38298,7 +38298,7 @@ focus_tree = {
 
 focus = {
 		id = GER_ascension_of_vancea
-		icon = GFX_focus_GER_ascension_of_todt
+		icon = GFX_goal_ascension_of_vancea
 		prerequisite = { focus = GER_fuhrerprinzip }
 
 		x = 10
