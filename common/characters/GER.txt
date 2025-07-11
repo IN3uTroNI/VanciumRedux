@@ -235,7 +235,7 @@ characters = {
 		name = GER_adolf_hitler
 		portraits = {
 			civilian = {
-				large = GFX_portrait_GER_adolf_hitler
+				large = GFX_portrait_large_vancea
 			}
 			army = {
 				large = GFX_portrait_GER_fritz_todt
