@@ -3,8 +3,8 @@ spriteTypes = {
 	#### Generic continuous goal icons
 
 	SpriteType = {
-	name = "GFX_goal_continuous_air_production"
-	texturefile = "gfx/interface/goals/goal_continuous_air_production.dds"			
+	name = "GFX_goal_ascension_of_vancea"
+	texturefile = "gfx/interface/goals/focus_GER_ascension_of_vancea.dds"			
 	}	
 	
 	SpriteType = {
