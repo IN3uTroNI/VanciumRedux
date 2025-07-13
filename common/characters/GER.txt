@@ -10,6 +10,66 @@ characters = {
  ######   #######   #######  ##    ##    ##    ##     ##    ##       ######## ######## ##     ## ########  ######## ##     ##  ######  
 
 
+GER_vancea_andrei = {
+	name = GER_Vancea_Andrei
+	portraits = {
+		army = {
+			small = GFX_portrait_small_vancea
+			large = GFX_portrait_large_vancea
+		}
+		civilian = {
+			large = GFX_portrait_large_vancea
+		}
+	}
+	allowed_civil_war = {
+		has_government = fascism
+	}
+	advisor = {
+		slot = army_chief
+		allowed = {
+			original_tag = GER
+			NOT = { has_ = GER_Vancea_Andrei_political }
+		}
+		cost = 250
+		ledger = army
+		available = {
+			OR = {
+				has_government = fascism
+				has_country_flag = GER_reinstated_nazi_leadership
+			}
+			has_completed_focus = GER_ascension_of_vancea
+		}
+		visible = {
+			has_government = fascism
+			NOT = { has_completed_focus = GER_oppose_hitler_ww }
+		}
+		on_add = {
+			custom_effect_tooltip = some_custom_effect_tooltip
+		}
+		traits = {
+			Commander-in-chief_of_the_Wehrmacht_High_Command
+		}
+	}
+		corps_commander = {
+			traits = {  media_personality politically_connected career_officer Organizer trickster }
+			skill = 4
+			attack_skill = 3
+			defense_skill = 3
+			planning_skill = 4
+			logistics_skill = 5
+			legacy_id = 4
+		}
+
+		field_marshal = { 
+			traits = { media_personality politically_connected career_officer Organizer trickster }
+			skill = 3
+			attack_skill = 4
+			defense_skill = 2
+			planning_skill = 4
+			logistics_skill = 5
+		}
+	}
+
 
 	### FASCIST ###
 	GER_adolf_hitler = {
@@ -4189,123 +4249,5 @@ characters = {
 				specialization_air = 1
 			}
 		}
-	}
-
-
-						qqqqq							#############################################
-
-
-	GER_Vancea_Andrei_political = {
-	name = GER_Vancea_Andrei
-	portraits = {
-		civilian = {
-			large = GFX_portrait_large_vancea
-			small = GFX_portrait_small_vancea
-		}
-	}
-	allowed_civil_war = {
-		has_government = fascism
-	}
-	advisor = {
-		slot = political_advisor
-		allowed = {
-			original_tag = GER
-			NOT = { has_idea = GER_Vancea_Andrei_military }
-		}
-		available = {
-			OR = {
-				has_government = fascism
-				has_country_flag = GER_reinstated_nazi_leadership
-			}
-			has_completed_focus = GER_ascension_of_vancea
-		}
-		cost = 250
-		visible = {
-			has_government = fascism
-			NOT = { has_completed_focus = GER_oppose_hitler_ww }
-		}
-		on_add = {
-			custom_effect_tooltip = vancea_tool
-		}
-		traits = {
-			Commander-in-chief_of_the_Wehrmacht_High_Command
-		} 
-		
-		}
-
-		corps_commander = {
-			traits = {  media_personality politically_connected career_officer Organizer trickster }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 5
-			legacy_id = 4
-		}
-		
-	}
-
-
-
-	GER_Vancea_Andrei_military = {
-	name = GER_Vancea_Andrei
-	portraits = {
-		army = {
-			small = GFX_portrait_small_vancea
-			large = GFX_portrait_large_vancea
-		}
-		civilian = {
-			large = GFX_portrait_large_vancea
-		}
-	}
-	allowed_civil_war = {
-		has_government = fascism
-	}
-	advisor = {
-		slot = army_chief
-		idea_token =
-		allowed = {
-			original_tag = GER
-			NOT = { has_idea = GER_Vancea_Andrei_political }
-		}
-		cost = 250
-		ledger = army
-		available = {
-			OR = {
-				has_government = fascism
-				has_country_flag = GER_reinstated_nazi_leadership
-			}
-			has_completed_focus = GER_ascension_of_vancea
-		}
-		visible = {
-			has_government = fascism
-			NOT = { has_completed_focus = GER_oppose_hitler_ww }
-		}
-		on_add = {
-			custom_effect_tooltip = some_custom_effect_tooltip
-		}
-		traits = {
-			army_offensive
-		}
-	}
-		corps_commander = {
-			traits = {  media_personality politically_connected career_officer Organizer trickster }
-			skill = 4
-			attack_skill = 3
-			defense_skill = 3
-			planning_skill = 4
-			logistics_skill = 5
-			legacy_id = 4
-		}
-
-		field_marshal = { 
-			traits = { media_personality politically_connected career_officer Organizer trickster }
-			skill = 3
-			attack_skill = 4
-			defense_skill = 2
-			planning_skill = 4
-			logistics_skill = 5
-		}
-	
 	}
 }
