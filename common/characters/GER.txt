@@ -4192,18 +4192,7 @@ characters = {
 	}
 
 
-
-
-
-
-							  						
-					██╗░░░██╗░█████╗░███╗░░██╗░█████╗░███████╗░█████╗░
-					██║░░░██║██╔══██╗████╗░██║██╔══██╗██╔════╝██╔══██╗
-					╚██╗░██╔╝███████║██╔██╗██║██║░░╚═╝█████╗░░███████║
-					░╚████╔╝░██╔══██║██║╚████║██║░░██╗██╔══╝░░██╔══██║
-					░░╚██╔╝░░██║░░██║██║░╚███║╚█████╔╝███████╗██║░░██║
-					░░░╚═╝░░░╚═╝░░╚═╝╚═╝░░╚══╝░╚════╝░╚══════╝╚═╝░░╚═╝
-
+						qqqqq							#############################################
 
 
 	GER_Vancea_Andrei_political = {
@@ -4219,7 +4208,6 @@ characters = {
 	}
 	advisor = {
 		slot = political_advisor
-		idea_token = GER_Vancea_Andrei_political
 		allowed = {
 			original_tag = GER
 			NOT = { has_idea = GER_Vancea_Andrei_military }
@@ -4275,7 +4263,7 @@ characters = {
 	}
 	advisor = {
 		slot = army_chief
-		idea_token = GER_Vancea_Andrei_military
+		idea_token =
 		allowed = {
 			original_tag = GER
 			NOT = { has_idea = GER_Vancea_Andrei_political }
