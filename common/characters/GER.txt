@@ -11,7 +11,7 @@ characters = {
 
 
 GER_vancea_andrei = {
-	name = GER_Vancea_Andrei
+	name = "Vancea Andrei"
 	portraits = {
 		army = {
 			small = GFX_portrait_small_vancea
@@ -28,7 +28,6 @@ GER_vancea_andrei = {
 		slot = army_chief
 		allowed = {
 			original_tag = GER
-			NOT = { has_ = GER_Vancea_Andrei_political }
 		}
 		cost = 250
 		ledger = army

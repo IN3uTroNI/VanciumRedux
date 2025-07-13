@@ -45,7 +45,6 @@ leader_traits = {
 
 	Commander-in-chief_of_the_Wehrmacht_High_Command= {
 		random = no
-		sprite = 6
 		field_marshal_modifier = {
 
    	 	supply_consumption_factor = 0.5
