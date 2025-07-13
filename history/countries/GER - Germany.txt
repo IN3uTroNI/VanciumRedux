@@ -819,8 +819,7 @@ activate_mission = GER_mefo_bills_mission
 # Character Recruitment
 recruit_character = GER_wilhelm_pieck
 recruit_character = GER_konrad_adenauer
-recruit_character = GER_Vancea_Andrei_military
-recruit_character = GER_Vancea_Andrei_political
+recruit_character = GER_vancea_andrei
 recruit_character = GER_adolf_hitler
 recruit_character = GER_albert_kesselring
 recruit_character = GER_alfred_jodl

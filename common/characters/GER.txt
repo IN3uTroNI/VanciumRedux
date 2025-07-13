@@ -44,7 +44,7 @@ GER_vancea_andrei = {
 			NOT = { has_completed_focus = GER_oppose_hitler_ww }
 		}
 		on_add = {
-			custom_effect_tooltip = some_custom_effect_tooltip
+			custom_effect_tooltip = vancea_tool
 		}
 		traits = {
 			Commander-in-chief_of_the_Wehrmacht_High_Command

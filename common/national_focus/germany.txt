@@ -38297,7 +38297,7 @@ focus_tree = {
 
 
 
-focus = {
+	focus = {
 		id = GER_ascension_of_vancea
 		icon = GFX_goal_ascension_of_vancea
 		prerequisite = { focus = GER_fuhrerprinzip }
@@ -38359,9 +38359,9 @@ focus = {
 				localization_key = GER_ascension_of_character_tt
 				CHARACTER = GER_vancea_andrei
 			}
-			show_ideas_tooltip = GER_vancea_reich_engineer
+			show_ideas_tooltip = vancea_tool
 
-			custom_effect_tooltip = generic_skip_one_line_tt
+			custom_effect_tooltip = vancea_tool
 
 			custom_effect_tooltip = {
 				localization_key = GER_ascension_of_character_focus_tt
@@ -38524,12 +38524,4 @@ focus = {
 			}
 		}
 	}
-
-
-
-
-
-
-
-
 }
