@@ -8,6 +8,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
+		name = "GFX_portrait_small_vancea"
+		texturefile = "gfx/leaders/GER/GER_portrat_small_Vancea_army.dds"
+	}
+
+	spriteType = {
 		name = "GFX_portrait_operative_unknown"
 		texturefile = "gfx/leaders/operative_unknown.dds"
 	}

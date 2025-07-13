@@ -43,6 +43,28 @@
 
 leader_traits = {
 
+	Commander-in-chief_of_the_Wehrmacht_High_Command= {
+		random = no
+		political_power_factor = 0.25
+		weekly_casualties_war_support = 0.002
+		war_support_factor = 0.2
+		mobilization_laws_cost_factor = -0.3
+		economy_cost_factor = 0.1
+		trade_laws_cost_factor = 0.20
+		conscription = 0.03
+		hidden_modifier = {
+			air_advisor_cost_factor = -0.10	
+			army_advisor_cost_factor = -0.10
+			navy_advisor_cost_factor = -0.10
+		}
+
+		ai_will_do = {
+			factor = 1
+		}
+	}
+
+
+
 	dictator = {
 		random = no
 		political_power_factor = 0.25
