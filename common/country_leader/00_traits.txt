@@ -76,6 +76,17 @@ leader_traits = {
 		}
 	}
 
+	GER_Kriegsmarine_Commander = {
+		sprite = 10
+		random = no 
+		naval_invasion_prep_speed = 0.2
+		naval_critical_score_chance_factor = 0.3
+		justify_war_goal_time = -0.5
+		base_fuel_gain_factor = 0.2
+		production_lack_of_resource_penalty_factor = -0.5
+		production_speed_dockyard_factor = 0.07
+	}
+
 
 
 	dictator = {

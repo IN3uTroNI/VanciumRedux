@@ -1465,6 +1465,41 @@ GER_vancea_andrei = {
 		}
 	}
 
+	GER_Raul_Maxim= {
+		name = GER_Raul_Maxim
+		portraits = {
+			army = {
+				large = GFX_portrait_large_raul
+				small = GFX_portrait_small_raul
+			}
+		}
+		advisor = {
+			slot = political_advisor
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+			}
+			traits = {
+				GER_Kriegsmarine_Commander
+			}
+			cost = 250
+			ai_will_do = {
+				base = 2
+			}
+		}
+		
+		navy_leader = {
+			traits = { navy_career_officer bold }
+			skill = 6
+			attack_skill = 4
+			defense_skill = 2
+			maneuvering_skill = 6
+			coordination_skill = 5
+			legacy_id = 26
+		}
+	}
+
 	GER_erich_raeder = {
 		name = GER_erich_raeder
 		portraits = {

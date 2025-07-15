@@ -7,9 +7,20 @@ spriteTypes = {
 		texturefile = "gfx/leaders/GER/portrait_ger_large_vancea.dds"
 	}
 
+
 	spriteType = {
 		name = "GFX_portrait_small_vancea"
 		texturefile = "gfx/leaders/GER/GER_portrat_small_Vancea_army.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_large_raul
+		texturefile = "gfx/leaders/GER/GER_portrat_large_raul.dds"
+	}
+
+	priteType = {
+		name = "GFX_portrait_small_raul"
+		texturefile = "gfx/leaders/GER/GER_portrat_small_Raul.dds"
 	}
 
 	spriteType = {
