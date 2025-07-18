@@ -288,18 +288,6 @@ GER_vancea_andrei = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
 ######## #### ######## ##       ########     ##     ##    ###    ########   ######  ##     ##    ###    ##        ######  
 ##        ##  ##       ##       ##     ##    ###   ###   ## ##   ##     ## ##    ## ##     ##   ## ##   ##       ##    ## 
 ##        ##  ##       ##       ##     ##    #### ####  ##   ##  ##     ## ##       ##     ##  ##   ##  ##       ##       
@@ -467,6 +455,47 @@ GER_vancea_andrei = {
  ######   ######## ##    ## ######## ##     ## ##     ## ########  ######  
 
 
+
+
+
+
+GER_andreas_hisu = {
+		name = GER_andreas_hisu
+		portraits = {
+			army = {
+				large = GFX_portrait_large_andreas
+				small = GFX_portrait_small_andreas
+			}
+		}
+		advisor = {
+			slot = high_command
+			ledger = army
+			allowed = {
+				original_tag = GER
+			}
+			available = {
+
+			}
+			traits = {
+				Menace
+			}
+			cost = 200
+			ai_will_do = {
+				base = 8
+			}
+		}
+		
+		corps_commander = {
+			visible = {}
+			traits = { trait_reckless armor_officer war_hero trickster }
+			skill = 5
+			attack_skill = 5
+			defense_skill = 2
+			planning_skill = 3
+			logistics_skill = 2
+			legacy_id = 4
+		}
+	}
 
 	GER_werner_von_fritsch = {
 		name = GER_werner_von_fritsch

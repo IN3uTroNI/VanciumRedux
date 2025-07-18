@@ -82,8 +82,7 @@ leader_traits = {
 		naval_invasion_prep_speed = 0.2
 		naval_critical_score_chance_factor = 0.3
 		justify_war_goal_time = -0.5
-		base_fuel_gain_factor = 0.2
-		production_lack_of_resource_penalty_factor = -0.5
+		production_lack_of_resource_penalty_factor = -0.1
 		production_speed_dockyard_factor = 0.07
 	}
 
@@ -12554,7 +12553,7 @@ leader_traits = {
 		sprite = 8
 		army_armor_attack_factor = 0.05
 	    army_armor_defence_factor = 0.05
-		#experience_gain_army = @experience_gain_low
+		#experience_gain_army = @experience_gain_low 
 
 		command_cap_increase = @tier1_cp_cap_increase
 		command_power = @tier1_cp_cost
@@ -14701,6 +14700,20 @@ leader_traits = {
 				command_power < @tier2_cp_cost
 			}
 		}
+	}
+
+	Menace = { #Andreas you are a menace to whe world
+		sprite = 5
+		army_speed_factor = 0.15
+
+		experience_gain_army = @chief_experience_gain_high
+		command_cap_increase = @tier3_cp_cap_increase
+		command_power = @tier3_cp_cost
+
+		required_garrison_factor = -0.2
+    	resistance_damage_to_garrison = -0.2
+		intel_from_combat_factor = 0.10
+
 	}
 
 	IRQ_fliegerfuhrer = {

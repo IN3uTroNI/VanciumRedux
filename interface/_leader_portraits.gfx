@@ -23,6 +23,17 @@ spriteTypes = {
 		texturefile = "gfx/leaders/GER/GER_portrat_small_Raul.dds"
 	}
 
+
+	spriteType = {
+		name = "GFX_portrait_large_andreas"
+		texturefile = "gfx/leaders/GER/GER_portrat_large_andreas.dds"
+	}
+
+	spriteType = {
+		name = "GFX_portrait_small_andreas"
+		texturefile = "gfx/leaders/GER/GER_portrat_small_Andreas.dds"
+	}
+
 	spriteType = {
 		name = "GFX_portrait_operative_unknown"
 		texturefile = "gfx/leaders/operative_unknown.dds"
