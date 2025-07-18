@@ -14,11 +14,11 @@ spriteTypes = {
 	}
 
 	spriteType = {
-		name = "GFX_portrait_large_raul
+		name = "GFX_portrait_large_raul"
 		texturefile = "gfx/leaders/GER/GER_portrat_large_raul.dds"
 	}
 
-	priteType = {
+	spriteType = {
 		name = "GFX_portrait_small_raul"
 		texturefile = "gfx/leaders/GER/GER_portrat_small_Raul.dds"
 	}
