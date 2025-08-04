@@ -20716,7 +20716,7 @@ focus_tree = {
 		id = GER_a_strong_successor
 		icon = GFX_focus_GER_a_strong_successor
 		prerequisite = { focus = GER_hegemony_of_the_ss focus = GER_wunderwaffe focus = GER_integration_of_puppet_economies focus = GER_propaganda_master focus = GER_total_control_over_domestic_affairs }
-		mutually_exclusive = { focus = GER_loyalty_to_the_fuhrer }
+		mutually_exclusive = { focus = GER_loyalty_to_the_fuhrer}
 		x = -2
 		y = 5
 		relative_position_id = GER_fuhrerprinzip
@@ -20827,7 +20827,7 @@ focus_tree = {
 		id = GER_loyalty_to_the_fuhrer
 		icon = GFX_focus_GER_loyalty_to_the_fuhrer
 		prerequisite = { focus = GER_hegemony_of_the_ss focus = GER_wunderwaffe focus = GER_integration_of_puppet_economies focus = GER_propaganda_master focus = GER_total_control_over_domestic_affairs }
-		mutually_exclusive = { focus = GER_a_strong_successor }
+		mutually_exclusive = { focus = GER_a_strong_successor focus = GER_place_holder_5}
 		x = 2
 		y = 5
 		relative_position_id = GER_fuhrerprinzip
@@ -38314,7 +38314,7 @@ focus_tree = {
 					is_ai = yes
 				}
 				hidden_trigger = {
-					NOT = { has_country_flag = GER_todt_was_ascended_flag } #Flag to prevent AI from taking the focus again after advisor has been replaced}
+					NOT = { has_country_flag = GER_todt_was_ascended_flag } #Flag to prevent AI from taking the focus again after advisor has been replaced
 				}
 			}
 
@@ -38444,84 +38444,84 @@ focus_tree = {
 		}
 	}
 
-
-focus = {
-		id = GER_form_organization_vancea
-		icon = GFX_focus_GER_form_organization_todt
+	focus = {
+		id = GER_place_holder_0
+		icon = GFX_goal_ascension_of_vancea
 		prerequisite = { focus = GER_ascension_of_vancea }
+		mutually_exclusive = {focus = GER_place_holder_1}
 
-		text_icon = GER_inner_circle_focus_style
+		x = -1
+		y = 1
+		relative_position_id = GER_ascension_of_vancea
+		cost = 3
+	}
+
+	focus = {
+		id = GER_place_holder_1
+		icon = GFX_goal_ascension_of_vancea
+		prerequisite = { focus = GER_ascension_of_vancea }
+		mutually_exclusive = {focus = GER_place_holder_0}
+		
+		x = 1
+		y = 1
+		relative_position_id = GER_ascension_of_vancea
+		cost = 3
+	}
+
+	focus = {
+		id = GER_place_holder_2
+		icon = GFX_goal_ascension_of_vancea
+		prerequisite = {focus = GER_place_holder_0}
 
 		x = 0
 		y = 1
-		relative_position_id = GER_ascension_of_vancea
-		cost = @inner_circle_time_tier_1
-		
-		available = {
-			if = { #ADVISOR WORKING ON THE FOCUS (Show progress)
-				limit = {
-					has_country_flag = GER_form_organization_todt_in_progress_flag
-				}
-				set_temp_variable = { temp_focus_days = @inner_circle_time_tier_1 } #For tooltip purposes
-				multiply_temp_variable = { temp_focus_days = 7 } #The constant uses focus cost which is in weeks, so convert to days
-				custom_override_tooltip = {
-					tooltip = {
-						localization_key = GER_inner_circle_focus_in_progress_tt
-						CHARACTER = GER_vancea_andrei
-						FLAG_DAYS = [?GER_form_organization_todt_in_progress_flag:days]
-					}
-					always = no 
-				}
-			}
-			else = { #NOT BEEN WORKED ON (Just Explain)
-				custom_override_tooltip = {
-					tooltip = {
-						localization_key = GER_focus_can_only_be_completed_by_advisor_tt
-						CHARACTER = GER_vancea_andrei
-						FOCUS = GER_ascension_of_vancea
-					}
-					always = no
-				}
-			}
-		}
-
-		search_filters = { FOCUS_FILTER_INNER_CIRCLE FOCUS_FILTER_INDUSTRY }
-
-		completion_reward = {
-			every_core_state = {
-				limit = {
-					is_fully_controlled_by = ROOT
-					free_building_slots = {
-						building = arms_factory
-						size > 0
-						include_locked = yes
-					}
-				}
-				random_select_amount = 3
-				add_extra_state_shared_building_slots = 1
-				add_building_construction = {
-					type = arms_factory
-					level = 1
-					instant_build = yes
-				}
-			}
-
-			custom_effect_tooltip = generic_skip_one_line_tt
-			if = {
-				limit = {
-					has_idea = GER_philipp_holzmann
-				}
-				swap_ideas = {
-					remove_idea = GER_philipp_holzmann
-					add_idea = GER_organization_todt
-				}
-			}
-			else = {
-				effect_tooltip = {
-					custom_effect_tooltip = available_designer
-					show_ideas_tooltip = GER_organization_todt
-				}
-			}
-		}
+		relative_position_id = GER_place_holder_0
+		cost = 3
 	}
+
+	focus = {
+		id = GER_place_holder_3
+		icon = GFX_goal_ascension_of_vancea
+		prerequisite = {focus = GER_place_holder_1}
+
+		x = 0
+		y = 1
+		relative_position_id = GER_place_holder_1
+		cost = 3
+	}
+
+
+	focus = {
+		id = GER_place_holder_4
+		icon = GFX_goal_ascension_of_vancea
+		prerequisite = {focus = GER_place_holder_2 focus = GER_place_holder_3}
+
+		x = 1
+		y = 1
+		relative_position_id = GER_place_holder_2
+	}
+
+	focus = {
+		id = GER_place_holder_5
+		icon = GFX_goal_ascension_of_vancea
+		mutually_exclusive = {focus = GER_place_holder_6 focus = GER_loyalty_to_the_fuhrer}
+		prerequisite = {focus = GER_place_holder_4}
+
+		x = -2
+		y = 1
+		relative_position_id = GER_place_holder_4
+	}
+
+	focus = {
+		id = GER_place_holder_6
+		icon = GFX_goal_ascension_of_vancea
+		mutually_exclusive = {focus = GER_place_holder_5}
+		prerequisite = {focus = GER_place_holder_4}
+
+		x = 2
+		y = 1
+		relative_position_id = GER_place_holder_4
+
+	}
+
 }

@@ -402,8 +402,8 @@ guiTypes = {
 		containerWindowType = {
 			name = "advisors_container"
 			orientation = center_up
-			position = { x = -220 y = @ADVISOR_CONTAINER_POS_Y }
-			size = { width = 480 height = 70 }
+			position = { x = -240 y = @ADVISOR_CONTAINER_POS_Y }
+			size = { width = 520 height = 70 }
 			clipping = no
 
 			background = {
@@ -416,7 +416,7 @@ guiTypes = {
 				name ="advisor_vancea_portrait"
 				spriteType = "GFX_fritz_todt_available_small"
 				orientation = center
-				position = { x=-292	 y=@ADVISOR_POS_Y }
+				position = { x=198	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
@@ -425,7 +425,7 @@ guiTypes = {
 				name ="advisor_todt_portrait"
 				spriteType = "GFX_fritz_todt_available_small"
 				orientation = center
-				position = { x=-227	 y=@ADVISOR_POS_Y }
+				position = { x=-257	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
@@ -434,7 +434,7 @@ guiTypes = {
 				name ="advisor_speer_portrait"
 				spriteType = "GFX_albert_speer_available_small"
 				orientation = center
-				position = { x=-162	 y=@ADVISOR_POS_Y }
+				position = { x=-192	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
@@ -443,7 +443,7 @@ guiTypes = {
 				name ="advisor_goring_portrait"
 				spriteType = "GFX_hermann_goring_available_small"
 				orientation = center
-				position = { x=-97	 y=@ADVISOR_POS_Y }
+				position = { x=-127	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
@@ -452,7 +452,7 @@ guiTypes = {
 				name ="advisor_himmler_portrait"
 				spriteType = "GFX_heinrich_himmler_available_small"
 				orientation = center
-				position = { x=-32	 y=@ADVISOR_POS_Y }
+				position = { x=-62	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
@@ -461,7 +461,7 @@ guiTypes = {
 				name ="advisor_goebbels_portrait"
 				spriteType = "GFX_joseph_goebbels_available_small"
 				orientation = center
-				position = { x=33	 y=@ADVISOR_POS_Y }
+				position = { x=3	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
@@ -470,7 +470,7 @@ guiTypes = {
 				name ="advisor_hess_portrait"
 				spriteType = "GFX_rudolf_hess_available_small"
 				orientation = center
-				position = { x=98	 y=@ADVISOR_POS_Y }
+				position = { x=68	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 
@@ -479,7 +479,7 @@ guiTypes = {
 				name ="advisor_bormann_portrait"
 				spriteType = "GFX_martin_bormann_available_small"
 				orientation = center
-				position = { x=163	 y=@ADVISOR_POS_Y }
+				position = { x=133	 y=@ADVISOR_POS_Y }
 				scale = 1
 			}
 		}

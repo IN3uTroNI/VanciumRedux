@@ -91,6 +91,10 @@ spriteTypes = {
 
 	## Available ##
 	spriteType = {
+		name = ""
+		texturefile = "gfx/interface/inner_circle/"
+	}
+	spriteType = {
 		name = "GFX_fritz_todt_available_small"
 		texturefile = "gfx/interface/inner_circle/fritz_todt_available_small.dds"
 	}
