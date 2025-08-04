@@ -95,8 +95,8 @@ ger_inner_circle_inlay_window = {
             GFX_portrait_GER_martin_bormann = {
                 check_variable = { GER_ascended_advisor_1 = 7 }
             }
-            GFX_portrait_GER_vancea_andrei = {
-       			check_variable = { GER_ascended_advisor_3 = 8 }
+            GFX_portrait_large_vancea = {
+       			check_variable = { GER_ascended_advisor_1 = 8 }
 		    }
         }
         ascended_advisor_2_portrait = {
@@ -124,8 +124,8 @@ ger_inner_circle_inlay_window = {
             GFX_portrait_GER_martin_bormann = {
                 check_variable = { GER_ascended_advisor_2 = 7 }
             }
-            GFX_portrait_GER_vancea_andrei = {
-       			check_variable = { GER_ascended_advisor_3 = 8 }
+            GFX_portrait_large_vancea = {
+       			check_variable = { GER_ascended_advisor_2 = 8 }
 		    }
         }
         ascended_advisor_3_portrait = {
@@ -153,7 +153,7 @@ ger_inner_circle_inlay_window = {
             GFX_portrait_GER_martin_bormann = {
                 check_variable = { GER_ascended_advisor_3 = 7 }
             }
-            GFX_portrait_GER_vancea_andrei = {
+            GFX_portrait_large_vancea = {
        			check_variable = { GER_ascended_advisor_3 = 8 }
 		    }
         }
@@ -179,19 +179,19 @@ ger_inner_circle_inlay_window = {
 
         #ADVISOR
         advisor_vancea_portrait = {
-            GFX_fritz_todt_selected_small = {
+            GFX_portrait_small_vancea = {
                 OR = {
-                    check_variable = { GER_ascended_advisor_1 = 1 }
-                    check_variable = { GER_ascended_advisor_2 = 1 }
-                    check_variable = { GER_ascended_advisor_3 = 1 }
+                    check_variable = { GER_ascended_advisor_1 = 8 }
+                    check_variable = { GER_ascended_advisor_2 = 8 }
+                    check_variable = { GER_ascended_advisor_3 = 8 }
                 }
             }
-            GFX_fritz_todt_unavailable_small = {
+            GFX_portrait_small_vancea = {
                 check_variable = { GER_ascended_advisor_1 = 0 compare = not_equals }
                 check_variable = { GER_ascended_advisor_2 = 0 compare = not_equals }
                 check_variable = { GER_ascended_advisor_3 = 0 compare = not_equals }
             }
-            GFX_fritz_todt_available_small = yes
+            GFX_portrait_small_vancea = yes
         }
         advisor_todt_portrait = {
             GFX_fritz_todt_selected_small = {

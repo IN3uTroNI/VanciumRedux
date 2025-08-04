@@ -14,8 +14,8 @@ GER_vancea_andrei = {
 	name = "Vancea Andrei"
 	portraits = {
 		army = {
-			small = GFX_portrait_small_vancea
 			large = GFX_portrait_large_vancea
+			small = GFX_portrait_small_vancea	
 		}
 		civilian = {
 			large = GFX_portrait_large_vancea

@@ -414,7 +414,7 @@ guiTypes = {
 			# VANCEA
 			iconType = {
 				name ="advisor_vancea_portrait"
-				spriteType = "GFX_fritz_todt_available_small"
+				spriteType = "GFX_portrait_small_vancea"
 				orientation = center
 				position = { x=198	 y=@ADVISOR_POS_Y }
 				scale = 1

@@ -55,6 +55,10 @@ spriteTypes = {
 		name = "GFX_inner_circle_leader_heinrich_himmler"
 		texturefile = "gfx/interface/inner_circle/inner_circle_leader_heinrich_himmler.dds"
 	}
+	spriteType = {
+		name = "GFX_inner_circle_leader_vancea_andrei"
+		texturefile = "gfx\leaders\GER\portrait_ger_large_vancea.dds"
+	}
 
 
 	### Ascended Advisor Assets ###
