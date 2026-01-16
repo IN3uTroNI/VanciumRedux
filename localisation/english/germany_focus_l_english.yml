@@ -7,3 +7,8 @@
  GER_Kriegsmarine_Commander:0 "Kriegsmarine Commander"
  GER_Raul_Maxim:0 "Raul Maxim"
  GER_andreas_hisu:0 "Andreas Hisu"
+  GER_army_loyalty:0 "Army Loyalty"
+ GER_army_loyalty_desc:0 "The Wehrmacht does not trust the fascist party to command the army. A new head organisation will be needed."
+ GER_vancea_option_vancea_tt:0 "§Y THIS WILL ENABLE THE VANCEA FOCUS TREE.§!"
+ GER_vancea_blomberg_fritsch_title:0 "Blomberg and Fritsch affair"
+ GER_vancea_blomberg_fritsch_desc:0 "Shocking revelations have rocked the German High Command. Field Marshal Werner von Blomberg has been forced to resign following revelations about his personal life, while Colonel-General Werner von Fritsch faces accusations questioning his loyalty to the Reich. The political fallout is immense, with whispers of purges and a reshuffling of command. The army’s stability hangs in The Führer's hands, either assume direct command of the Wehrmacht himself or place a highly trusted officer in charge of the OKW ."

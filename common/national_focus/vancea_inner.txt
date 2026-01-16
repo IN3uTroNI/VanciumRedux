@@ -11,7 +11,7 @@ focus_tree = {
 
 
 
-focus = {
+	focus = {
     
 		id = GER_ascension_of_vancea
 		icon = GFX_goal_ascension_of_vancea
@@ -134,8 +134,8 @@ focus = {
 					set_variable = { GER_ascended_advisor_3 = 8 }
 				}
 			}
-
-			
+		}
+	}		
 
 	focus = {
 		id = GER_place_holder_0
@@ -215,5 +215,4 @@ focus = {
 		y = 1
 		relative_position_id = GER_place_holder_4
 	}
-
 }

@@ -963,6 +963,11 @@ spriteTypes = {
 	### GER
 
 	spriteType = {
+		name = "GFX_idea_GER_Army_loyal"
+		texturefile = "gfx\Interface\ideas\GER_Army_loyal.dds"
+	}
+
+	spriteType = {
 		name = "GFX_idea_GER_adolf_hitler"
 		texturefile = "gfx/interface/ideas/idea_GER_adolf_hitler.dds"
 	}

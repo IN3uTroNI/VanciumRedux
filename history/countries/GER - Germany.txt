@@ -1,5 +1,5 @@
 ﻿capital = 64 # Berlin/Brandeburg
-
+add_ideas = GER_army_loyalty
 if = {
 	limit = {
 		NOT = {
