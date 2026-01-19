@@ -6512,7 +6512,18 @@ ideas = {
 				production_speed_rail_way_factor = 0.6
 			}
 		}
+
+		GER_army_loyalty = {
+			picture = GFX_idea_GER_Army_loyal
+			allowed = {
+				original_tag = GER
+			}
+
+			modifier = {
+				war_support_factor = -0.10
+				recruitable_population_factor = -0.
+			}
+		}
+		
 	}
-
-
 }

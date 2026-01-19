@@ -2,7 +2,7 @@ add_namespace = mod_event
 
 country_event = {
 
-id = GER_vancea.1
+    id = GER_vancea.1
     title = GER_vancea_blomberg_fritsch_title
     desc = GER_vancea_blomberg_fritsch_desc
     picture = GFX_report_event_german_generals
@@ -22,9 +22,11 @@ id = GER_vancea.1
     }
 
     mean_time_to_happen = {
-        days = 15 }
+        days = 15 
+    }
+    
 
-option = {
+    option = {
         name = GER_vancea_option_hitler
 
         available = {

@@ -1,7 +1,6 @@
-version="1.7"
+version="1"
 tags={
-	"Alternative History"
+	"Gameplay"
 }
-name="VanceaRedux"
+name="dsadasd"
 supported_version="1.17.3.0"
-picture="vanciumredux.png"

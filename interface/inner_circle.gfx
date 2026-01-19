@@ -57,7 +57,7 @@ spriteTypes = {
 	}
 	spriteType = {
 		name = "GFX_inner_circle_leader_vancea_andrei"
-		texturefile = "gfx\leaders\GER\portrait_ger_large_vancea.dds"
+		texturefile = "gfx/leaders/GER/portrait_ger_large_vancea.dds"
 	}
 
 
