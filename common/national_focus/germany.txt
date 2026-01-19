@@ -38326,7 +38326,9 @@ focus_tree = {
 				}
 			}
 
+
 			has_government = fascism
+			has_country_flag = GER_vancea_path_chosen
 			NOT = {
 				has_country_leader = {
 					ruling_only = yes
